@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text-align test</title>
+    <style>
+        #fruittext {
+            width: 800px;
+            margin: 5px;
+            padding: 5px;
+            border: medium double black;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <p id="fruittext">
+        我们一个一个的。
+        fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+            fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+            fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+            fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+            fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+            fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+            fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+            fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+            fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+            fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+            fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+            fjijwioejfwjfiwjejwfjwjfjwjfjfjijwioejfwjfiwjejwfjwjfjwjfj
+        jfiwjifwjifjwofj
+    </p>
+    <p>
+        <button>start</button>
+        <button>end</button>
+        <button>left</button>
+        <button>right</button>
+        <button>center</button>
+        <button>justifys</button>
+    </p>
+    <script>
+        var buttons = document.getElementsByTagName('button');
+        for(var i = 0; i < buttons.length; i++) {
+            buttons[i].onclick = function (e){
+                document.getElementById('fruittext').style.textAlign = e.target.innerHTML;
+            }
+        }
+    </script>
+</body>
+</html>
