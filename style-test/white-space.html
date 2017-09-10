@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>white-space样式测试</title>
+    <style>
+        span {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        飞机文Joe非叫我非叫我IE金饭碗积分；放开我耳扣无法忘记分配我就服务
+            及附件我耳机
+            非叫我IE金饭碗积分；放开我耳扣无法忘记分配我就服务
+        及附件我耳机
+        function (){
+
+        }
+    </div>
+    <div id="btn">
+        <mark>请点击不同的属性值测试:</mark>
+        <span>normal</span>
+        <span>nowrap</span>
+        <span>pre</span>
+        <span>pre-line</span>
+        <span>pre-wrap</span>
+    </div>
+    <script>
+        var el = document.querySelector('div');
+        var btn = document.getElementById('btn');
+        console.log(el);
+        btn.addEventListener('click',function (event){
+            console.log(event);
+            if(event.target.tagName == 'SPAN'){
+                el.style.whiteSpace = event.target.innerHTML;
+            }
+        },false)
+    </script>
+</body>
+</html>
